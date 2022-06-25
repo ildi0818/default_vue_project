@@ -1,9 +1,15 @@
 <template>
-  <div class="container">ok</div>
+  <app-header/>
+  <app-main/>
 </template>
 
 <script>
-export default {};
+import AppHeader from './components/appHeader.vue';
+import AppMain from './components/AppMain.vue';
+export default {
+  name:'app',
+  components:{AppHeader, AppMain}
+};
 </script>
 
 <style>
